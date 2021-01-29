@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "hc2-twitter-avatar",
-  "alias": "hc2-twitter-avatar.vercel.app",
+  "alias": "hc2-twitter-avatar-six.vercel.app",
   "builds": [
     {
       "src": "index.js",
