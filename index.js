@@ -14,9 +14,14 @@ const get = (username, size) => {
   return new Promise((resolve) => {
     if (cache[username]) resolve(cache[username]);
     else
-      request(url, (_, __, body) => {
+      request({
+        url,
+        headers: {
+          'User-Agent': 'Twitterbot'
+        }
+      }, (_, __, body) => {
         const $ = cheerio.load(body);
-        const url = ($(".avatar img").attr("src") || "").replace(
+        const url = ($(".ProfileAvatar-image").attr("src") || "").replace(
           "_normal",
           size
         );
