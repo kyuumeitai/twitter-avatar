@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "name": "twitter-avatar",
+  "name": "twitter-avatar-ltnext",
+  "alias": "twitter-avatar-ltnext.vercel.app",
   "builds": [
     {
       "src": "index.js",
